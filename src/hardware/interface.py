@@ -40,8 +40,8 @@ class HardwareInterface:
                 elif event.key == pygame.K_KP5 or event.key == pygame.K_KP_ENTER or event.key == pygame.K_RETURN:
                     actions.append('SELECT')
                 
-                # Back (Numpad . or *)
-                elif event.key == pygame.K_KP_PERIOD or event.key == pygame.K_KP_MULTIPLY or event.key == pygame.K_BACKSPACE:
+                # Back (Numpad -, ., or *)
+                elif event.key == pygame.K_KP_MINUS or event.key == pygame.K_KP_PERIOD or event.key == pygame.K_KP_MULTIPLY or event.key == pygame.K_BACKSPACE:
                     actions.append('BACK')
                 
                 # Numeric Input (Numpad 0-9)
@@ -61,6 +61,9 @@ class HardwareInterface:
                 elif event.key == pygame.K_2: actions.append('2')
                 elif event.key == pygame.K_3: actions.append('3')
                 elif event.key == pygame.K_4: actions.append('4')
+                elif event.key == pygame.K_5: actions.append('5')
+                elif event.key == pygame.K_6: actions.append('6')
+                elif event.key == pygame.K_MINUS: actions.append('BACK')
 
         return actions
 

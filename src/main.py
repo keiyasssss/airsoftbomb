@@ -29,7 +29,7 @@ def main():
     clock = pygame.time.Clock()
     running = True
     
-    while running:
+    while running and ui_manager.running:
         # 1. Event Handling (Pygame + Hardware)
         pygame_events = pygame.event.get()
         for event in pygame_events:
